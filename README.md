@@ -4,6 +4,6 @@ Clone with:
 Install dependencies with:
 * pip install -r requirements.txt
 
-After cloning, run via your IDE of choice, or from the command line with:
-nosetests -v
-nosetests -v tests/[insert test script]
+After cloning, run via your IDE of choice, or from the command line with one of:
+* nosetests -v
+* nosetests -v tests/[insert test script]
