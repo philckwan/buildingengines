@@ -20,6 +20,9 @@ class JSONApiTestCase(unittest.TestCase):
         for key in jsonapi_constants.RECORD_KEYS:
             assert key in json_data.keys()
 
+        for json_key in json_data.keys():
+            assert json_key in jsonapi_constants.RECORD_KEYS
+
     def test_count_of_records(self):
         list_json_data = json.loads(urllib2.urlopen(jsonapi_constants.ALL_RECORDS).read())
         self.assertEquals(len(list_json_data), jsonapi_constants.ALL_RECORDS_LENGTH)
